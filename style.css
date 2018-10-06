@@ -1,5 +1,9 @@
 <style type="text/css">
 
+body {
+   color: purple;
+   background-color: #d8da3d
+}
 p{
 	border-style: solid;
 	border-width: 7px;
