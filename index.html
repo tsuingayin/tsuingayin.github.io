@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Index Page</title>
+	<title>Problem 2 - Javascript Program (1155102438)</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 	body {
@@ -60,7 +60,10 @@
 			var b = prompt("Enter b value");
 			var c = parseInt(a) + parseInt(b);
 			alert("c=" + c);
+		}
 
+		function provideFeedback(){
+			document.getElementById("feedback").value = "Hello JavaScript";
 		}
 	</script>
 </head>
@@ -70,56 +73,48 @@
 	<!-- Site navigation menu -->
 	<ul class="navbar">
 		<li><a href="index.html"> Index</a>
-		<li><a href="library.html"> Library </a>
-		<li><a href="library.html"> Library </a>
-		<li><a href="library.html"> Library </a>
+		<li><a href="contactme.html"> Know More </a>
 	</ul>
 
 
 
-	<h1 style="">Welcome to My Page!</h1>
-	<p>This is a fan page for wikiHow. Make yourself at home!</p>
+	<h1 style="">Problem 2 - Javascript Program (1155102438)</h1>
+	<p>This is a math puzzle for yall! <br> 50/(5*10)+5</p>
 
-	<h2>Important Dates</h2>
-	<p><i>January 15, 2019</i> - wikiHow's Birthday</p>
+	<form id="form">
+  			Your Answer:<br>
+  		<input type="text" id="answer" value=""><br>
+	</form>
 
-	<h2>Links</h2>
-	<p>Here is a link to wikiHow: <a href=“www.cuhk.edu.hk”>www.wikihow.com</a></p>
-	<button onclick="compute_a_plus_b()">Try it</button>
-	<img src="http://www.cuhk.edu.hk/english/images/cuhk_logo_2x.png"></img>
+	<button onclick="myFunction()">submit</button>
 
-	<ul>
-		<li>apples
-			<ul>
-				<li>golden delicious</li>
-				<li>granny smith</li>
-				<li>gala</li>
-			</ul>
-		</li>
-		<li>oranges</li>
-		<li>pineapples</li>
-		<li>mangoes</li>
-		<li>dragonfruit</li>
-	</ul>
+	<h1 id="feedback">click submit</h1>
 
-	<table>
-		<tr>
-			<th>Month</th>
-			<th>Rent</th>
-			<th>Utilities</th>
-			<th>Groceries</th>
-			<th>Eating Out</th>
-			<th>Entertainment</th>
-		</tr>
-		<tr>
-			<td>August</td>
-			<td>$1500</td>
-			<td>$150</td>
-			<td>$350</td>
-			<td>$100</td>
-			<td>$50</td>
-		</tr>
-	</table>
+
+
+
+
+	<script>
+			function myFunction() {
+    			var x = document.getElementById("answer");
+    			var text = "Your answer is ";
+    			if(x.value == "5"){
+        			text += "correct <br>";
+        			
+    			}
+    			else{
+    				text += "wrong <br>";
+    			}
+
+    			document.getElementById("feedback").innerHTML = text;
+    
+    			
+    		}
+
+
+		
+	</script>
+	<p> Written by Tsui Nga Yin, Yoyo <br> SID: 1155102438 <br> Date: 8 Oct 2018 </p>
 
 </body>
 </html>
