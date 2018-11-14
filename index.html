@@ -55,17 +55,28 @@
 	}
 	</style>
 	<script>
-		function compute_a_plus_b(){
-			var a = prompt("Enter a value");
-			var b = prompt("Enter b value");
-			var c = parseInt(a) + parseInt(b);
-			alert("c=" + c);
-		}
+	function compute_a_plus_b(){
+		var a = prompt("Enter a value");
+		var b = prompt("Enter b value");
+		var c = parseInt(a) + parseInt(b);
+		alert("c=" + c);
+	}
 
-		function provideFeedback(){
-			document.getElementById("feedback").value = "Hello JavaScript";
-		}
-	</script>
+	function provideFeedback(){
+		document.getElementById("feedback").value = "Hello JavaScript";
+	}
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123173668-2"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-123173668-2');
+</script>
+
+</script>
 </head>
 
 <body>
@@ -73,49 +84,60 @@
 	<!-- Site navigation menu -->
 	<ul class="navbar">
 		<li><a href="index.html"> Index</a>
-		<li><a href="contactme.html"> Know More </a>
-		li><a href="assignment4.html"> Assignment 4</a>
-	</ul>
+			<li><a href="contactme.html"> Know More </a>
+				li><a href="assignment4.html"> Assignment 4</a>
+			</ul>
 
 
 
-	<h1 style="">Problem 2 - Javascript Program (1155102438)</h1>
-	<p>This is a math puzzle for yall! <br> 50/(5*10)+5</p>
+			<h1 style="">Problem 2 - Javascript Program (1155102438)</h1>
+			<p>This is a math puzzle for yall! <br> 50/(5*10)+5</p>
 
-	<form id="form">
-  			Your Answer:<br>
-  		<input type="text" id="answer" value=""><br>
-	</form>
+			<form id="form">
+				Your Answer:<br>
+				<input type="text" id="answer" value=""><br>
+			</form>
 
-	<button onclick="myFunction()">submit</button>
+			<button onclick="myFunction()">submit</button>
 
-	<h1 id="feedback">click submit</h1>
-
-
+			<h1 id="feedback">click submit</h1>
 
 
 
-	<script>
+
+
+			<script>
 			function myFunction() {
-    			var x = document.getElementById("answer");
-    			var text = "Your answer is ";
-    			if(x.value == "5"){
-        			text += "correct <br>";
+				var x = document.getElementById("answer");
+				var text = "Your answer is ";
+				if(x.value == "5"){
+					text += "correct <br>";
 
-    			}
-    			else{
-    				text += "wrong <br>";
-    			}
+				}
+				else{
+					text += "wrong <br>";
+				}
 
-    			document.getElementById("feedback").innerHTML = text;
-
-
-    		}
+				document.getElementById("feedback").innerHTML = text;
 
 
+			}
 
-	</script>
-	<p> Written by Tsui Nga Yin, Yoyo <br> SID: 1155102438 <br> Date: 8 Oct 2018 </p>
 
-</body>
-</html>
+
+			</script>
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123173668-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-123173668-2');
+		</script>
+
+		<p> Written by Tsui Nga Yin, Yoyo <br> SID: 1155102438 <br> Date: 8 Oct 2018 </p>
+
+	</body>
+	</html>
