@@ -1,45 +1,49 @@
 body {
 	padding-left: 11em;
+	padding-right: 11em;
 	font-family: Georgia, "Times New Roman",
 	Times, serif;
-	color: purple;
-	background-color: #d8da3d
+
 }
 
-ul.navbar {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	top: 2em;
-	left: 1em;
-	width: 9em
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
 }
-h1 {
-	font-family: Helvetica, Geneva, Arial,
-	SunSans-Regular, sans-serif
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #2D2D2D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
-ul.navbar li {
-	background: white;
-	margin: 0.5em 0;
-	padding: 0.3em;
-	border-right: 1em solid black
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #5D737E;
+    color: black;
 }
-ul.navbar a {
-	text-decoration: none
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #3F687C;
+    color: #2D2D2D;
 }
-a:link {
-	color: blue
-}
-a:visited {
-	color: purple
+
+.topnav a.permactive {
+    background-color: #4F4F4F;
+    color: white;
 }
 p{
 	border-style: solid;
-	border-width: 7px;
-	border-color: black;
-	padding: 20px;
+	border-width: 2px;
+	border-color: #A2A392;
+	padding: 2px;
 	text-align: center;
-	background-color: cadetblue;
-	color: white;
+	background-color: #D2E4C4;
+	color: #2D2D2D;
 }

@@ -4,113 +4,41 @@
 <head>
 	<title>Contact Me</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-	body {
-		padding-left: 11em;
-		font-family: Georgia, "Times New Roman",
-		Times, serif;
-		color: purple;
-		background-color: #d8da3d
-	}
 
-	ul.navbar {
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-		position: absolute;
-		top: 2em;
-		left: 1em;
-		width: 9em
-	}
-	h1 {
-		font-family: Helvetica, Geneva, Arial,
-		SunSans-Regular, sans-serif
-	}
-	ul.navbar li {
-		background: white;
-		margin: 0.5em 0;
-		padding: 0.3em;
-		border-right: 1em solid black
-	}
-	ul.navbar a {
-		text-decoration: none
-	}
-	a:link {
-		color: blue
-	}
-	a:visited {
-		color: purple
-	}
-	a:hover {
-		color: white
-	}
-	p{
-		border-style: solid;
-		border-width: 7px;
-		border-color: black;
-		padding: 20px;
-		text-align: center;
-		background-color: cadetblue;
-		color: white;
-	}
-	</style>
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123173668-2"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-		gtag('config', 'UA-123173668-2');
+	gtag('config', 'UA-123173668-2');
 	</script>
-	<ul class="navbar">
-		<li><a href="index.html"> Index</a>
-		<li><a href="contactme.html"> Know More </a>
-		<li><a href="assignment4.html"> Assignment 4</a>
-	</ul>
+	<div class="topnav">
+		<a class="permactive" href="#home">EPIN1020</a>
+		<a href="index.html">Math Puzzle</a>
+		<a href="assignment4.html">Airtable</a>
+		<a class="active" href="contactme.html">Contact Me</a>
+	</div>
+	<h2>Contact Me</h2>
+	<img src ="singconfss2.png">
 
-	<h2>Links</h2>
-	<p>Here is a link to wikiHow: <a href=“www.cuhk.edu.hk”>www.wikihow.com</a></p>
-	<button onclick="compute_a_plus_b()">Click for prompt</button>
-	<img src="http://www.cuhk.edu.hk/english/images/cuhk_logo_2x.png"></img>
-
-	<ul>
-		<li>apples
-			<ul>
-				<li>golden delicious</li>
-				<li>granny smith</li>
-				<li>gala</li>
-			</ul>
-		</li>
-		<li>oranges</li>
-		<li>pineapples</li>
-		<li>mangoes</li>
-		<li>dragonfruit</li>
-	</ul>
-
-	<table>
-		<tr>
-			<th>Month</th>
-			<th>Rent</th>
-			<th>Utilities</th>
-			<th>Groceries</th>
-			<th>Eating Out</th>
-			<th>Entertainment</th>
-		</tr>
-		<tr>
-			<td>August</td>
-			<td>$1500</td>
-			<td>$150</td>
-			<td>$350</td>
-			<td>$100</td>
-			<td>$50</td>
-		</tr>
-	</table>
+	<p> email: uhmyoyo@gmail.com </br>
+		fb: Tsui Nga Yin </p>
 
 
-</body>
-</html>
+
+	</body>
+	</html>

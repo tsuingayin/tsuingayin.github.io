@@ -4,56 +4,6 @@
 <head>
 	<title>Problem 2 - Javascript Program (1155102438)</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-	body {
-		padding-left: 11em;
-		font-family: Georgia, "Times New Roman",
-		Times, serif;
-		color: purple;
-		background-color: #d8da3d
-	}
-
-	ul.navbar {
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-		position: absolute;
-		top: 2em;
-		left: 1em;
-		width: 9em
-	}
-	h1 {
-		font-family: Helvetica, Geneva, Arial,
-		SunSans-Regular, sans-serif
-	}
-	ul.navbar li {
-		background: white;
-		margin: 0.5em 0;
-		padding: 0.3em;
-		border-right: 1em solid black
-	}
-	ul.navbar a {
-		text-decoration: none
-	}
-	a:link {
-		color: blue
-	}
-	a:visited {
-		color: purple
-	}
-	a:hover {
-		color: white
-	}
-	p{
-		border-style: solid;
-		border-width: 7px;
-		border-color: black;
-		padding: 20px;
-		text-align: center;
-		background-color: cadetblue;
-		color: white;
-	}
-	</style>
 	<script>
 	function compute_a_plus_b(){
 		var a = prompt("Enter a value");
@@ -81,69 +31,62 @@
 
 <body>
 
-	<!-- Site navigation menu -->
-	<ul class="navbar">
-		<li><a href="index.html"> Index</a>
-<<<<<<< HEAD
-			<li><a href="contactme.html"> Know More </a>
-				li><a href="assignment4.html"> Assignment 4</a>
-			</ul>
-=======
-		<li><a href="contactme.html"> Know More </a>
-		<li><a href="assignment4.html"> Assignment 4</a>
-	</ul>
->>>>>>> 336cb1c4f496d15ed086beef7bddcafc2825481c
+				<div class="topnav">
+					<a class="permactive" href="#home">EPIN1020</a>
+					<a class="active" href="index.html">Math Puzzle</a>
+					<a href="assignment4.html">Airtable</a>
+					<a href="contactme.html">Contact Me</a>
+				</div>
 
 
+				<h1 style="">Problem 2 - Javascript Program (1155102438)</h1>
+				<p>This is a math puzzle for yall! <br> 50/(5*10)+5</p>
 
-			<h1 style="">Problem 2 - Javascript Program (1155102438)</h1>
-			<p>This is a math puzzle for yall! <br> 50/(5*10)+5</p>
+				<form id="form">
+					Your Answer:<br>
+					<input type="text" id="answer" value=""><br>
+				</form>
 
-			<form id="form">
-				Your Answer:<br>
-				<input type="text" id="answer" value=""><br>
-			</form>
+				<button onclick="myFunction()">submit</button>
 
-			<button onclick="myFunction()">submit</button>
-
-			<h1 id="feedback">click submit</h1>
+				<h1 id="feedback">click submit</h1>
 
 
 
 
 
-			<script>
-			function myFunction() {
-				var x = document.getElementById("answer");
-				var text = "Your answer is ";
-				if(x.value == "5"){
-					text += "correct <br>";
+				<script>
+				function myFunction() {
+					var x = document.getElementById("answer");
+					var text = "Your answer is ";
+					if(x.value == "5"){
+						text += "correct <br>";
+
+					}
+					else{
+						text += "wrong <br>";
+					}
+
+					document.getElementById("feedback").innerHTML = text;
+
 
 				}
-				else{
-					text += "wrong <br>";
-				}
-
-				document.getElementById("feedback").innerHTML = text;
-
-
-			}
 
 
 
-			</script>
+				</script>
 
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123173668-2"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123173668-2"></script>
+				<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
 
-			gtag('config', 'UA-123173668-2');
-		</script>
+				gtag('config', 'UA-123173668-2');
+				</script>
 
-		<p> Written by Tsui Nga Yin, Yoyo <br> SID: 1155102438 <br> Date: 8 Oct 2018 </p>
+				<p> Written by Tsui Nga Yin, Yoyo <br> SID: 1155102438 <br> Date: 8 Oct 2018 </p>
 
-	</body>
-	</html>
+			</body>
+			</html>
